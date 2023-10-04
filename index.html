@@ -1,0 +1,150 @@
+<!-----------------------------FORMULARIOS------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brabej_Designer</title>
+    <!--se puede linkear en el head al ser algo que no se debe ver en el sitio -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--Encabezado de la pg web-->
+    <header id="encabezado">
+        <h1 class="logo"><a href="https://egg.live/" class="fuente-acento">Web</a></h1>
+        <nav>
+            <!-- Agrega tus enlaces de navegación aquí -->
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#acerca">Sobre mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--utilizamos etiqueta main para indicar  contenido ppal-->
+    <main>
+        <!-----Seccion INICIO------->
+        <section id="inicio">
+            <div class="section-1">
+                <h2 class="fuente-acento">Acerca de mi</h2>
+                <p class="parrafo1 fuente-oscura">
+                    bienvenido a mi pagina xxxxxxxxxx
+                </p>
+            </div>
+
+            <div class="imagen1">
+                <img class="img1" src="/PASO 4_5_6/img/paisaje.jpg" alt="paisaje" width="300" height="350">
+            </div>
+        </section>
+        <!-----Seccion Trabajo------->
+        <section id="trabajos">
+            <div class="titulo">
+                <h2 class=" titulo fuente-acento">Work</h2>
+            </div>
+
+            <div class="work">
+                <div class="carta 1">
+                    <img src="/PASO 4_5_6/img/work.jpg" alt="work" width="200" height="200">
+                    <h2 class="fuente-acento">Titulo 1</h2>
+                    <p>Cómo redimensionar múltiples imágenes en CSS. Para lograrlo, usamos las propiedades height y
+                        width de CSS, con sus respectivos valores asignados en 'auto'. Y luego, tenemos que apoyarnos en
+                        las propiedades max-height y max-width para definir que tamaño de imagen queremos que se muestre
+                        en nuestra aplicación web</p>
+                </div>
+                <div class="carta 2">
+
+                    <img src="/PASO 4_5_6/img/work.jpg" alt="work" width="200" height="200">
+                    <h2 class="fuente-acento">Titulo2</h2>
+                    <p>Cómo redimensionar múltiples imágenes en CSS. Para lograrlo, usamos las propiedades height y
+                        width de CSS, con sus respectivos valores asignados en 'auto'. Y luego, tenemos que apoyarnos en
+                        las propiedades max-height y max-width para definir que tamaño de imagen queremos que se muestre
+                        en nuestra aplicación web</p>
+                </div>
+                <div class="carta 3">
+
+                    <img src="/PASO 4_5_6/img/work.jpg" alt="work" width="200" height="200">
+                    <h2 class="fuente-acento">Titulo 3</h2>
+                    <p>Cómo redimensionar múltiples imágenes en CSS. Para lograrlo, usamos las propiedades height y
+                        width de CSS, con sus respectivos valores asignados en 'auto'. Y luego, tenemos que apoyarnos en
+                        las propiedades max-height y max-width para definir que tamaño de imagen queremos que se muestre
+                        en nuestra aplicación web</p>
+                </div>
+                <div class="carta 4">
+
+                    <img src="/PASO 4_5_6/img/work.jpg" alt="work" width="200" height="200">
+                    <h2 class="fuente-acento">Titulo 4</h2>
+                    <p>Cómo redimensionar múltiples imágenes en CSS. Para lograrlo, usamos las propiedades height y
+                        width de CSS, con sus respectivos valores asignados en 'auto'. Y luego, tenemos que apoyarnos en
+                        las propiedades max-height y max-width para definir que tamaño de imagen queremos que se muestre
+                        en nuestra aplicación web</p>
+                </div>
+                <div class="scarta 5">
+
+                    <img src="/PASO 4_5_6/img/work.jpg" alt="work" width="200" height="200">
+                    <h2 class="fuente-acento">Titulo 5</h2>
+                    <p>Cómo redimensionar múltiples imágenes en CSS. Para lograrlo, usamos las propiedades height y
+                        width de CSS, con sus respectivos valores asignados en 'auto'. Y luego, tenemos que apoyarnos en
+                        las propiedades max-height y max-width para definir que tamaño de imagen queremos que se muestre
+                        en nuestra aplicación web</p>
+                </div>
+            </div>
+        </section>
+        <!-----Seccion Servicios------->
+        <section id="servicios">
+            <div class="section-3">
+                <h2 class="fuente-acento">services</h2>
+                <img src="/PASO 4_5_6/img/services.jpg" alt="work" width="400" height="400">
+            </div>
+        </section>
+        <!-----Seccion Contacto------->
+        <section id="contacto">
+            <h2 class="fuente-acento">Contactanos</h2>
+            <p><em>¡Esperamos tu consulta!</em></p>
+
+            <form action="" method="get" class="formulario" id="form">
+                <div class="form-row">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" />
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="pepe@gmail.com" required />
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"></p>
+            </form>
+
+        </section>
+    </main>
+
+    <!-----FOOTER- PIE DE PAGINA------->
+    <footer>
+        <h3 class="fuente-acento">Redes Sociales</h3>
+        <nav>
+            <ul>
+                <li><a href="https://wa.me/ +57 3115194821">Whatssap</a></li>
+                <li> <a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
